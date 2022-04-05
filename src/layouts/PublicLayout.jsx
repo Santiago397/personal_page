@@ -6,7 +6,7 @@ import NavResponsive from '../components/NavResponsive'
 
 const PublicLayout = () => {
     return (
-        <div className='flex flex-col justify-between h-screen'>
+        <div className='flex flex-col justify-between h-screen w-screen'>
             <NavBar />
             <NavResponsive />
             <div className='h-full overflow-y-scroll'>

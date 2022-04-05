@@ -11,7 +11,7 @@ const NavResponsive = () => {
             {
                 showNav &&
                 <div className='flex flex-col p-1'>
-                    <Option route={'/'} text={'About me'} />
+                    <Option route={'/about'} text={'About me'} />
                     <Option route={'/'} text={'Projects'} />
                     <Option route={'/'} text={'Contact'} />
                 </div>
