@@ -3,10 +3,11 @@ import photo from '../media/Gon.png'
 
 const Projects = () => {
     return (
-        <div className='flex h-full items-center overflow-x-auto bg-blue-300'>
-            <Project img={photo} title={"pj1"} descr={"qweqwewqdasdaszxczxcxcbxcb"} link={"#"} />
-            <Project img={photo} title={"pj1"} descr={"qweqwewqdasdaszxczxcxcbxcb"} link={"#"} />
-            <Project img={photo} title={"pj1"} descr={"qweqwewqdasdaszxczxcxcbxcb"} link={"#"} />
+        <div className='flex items-center overflow-auto bg-blue-300 sm:justify-around'>
+            <Project img={photo} title={"pj1"} descr={"Este proyecto supone hacer equis cosa pero también se enfoca en hacer y cosa"} link={"#"} />
+            <Project img={photo} title={"pj2"} descr={"Este proyecto supone hacer equis cosa pero también se enfoca en hacer y cosa"} link={"#"} />
+            <Project img={photo} title={"pj3"} descr={"Este proyecto supone hacer equis cosa pero también se enfoca en hacer y cosa"} link={"#"} />
+            <Project img={photo} title={"pj4"} descr={"Este proyecto supone hacer equis cosa pero también se enfoca en hacer y cosa"} link={"#"} />
             
         </div>
     )
@@ -14,11 +15,11 @@ const Projects = () => {
 
 const Project = ({img, title, descr, link}) => {
     return (
-        <div className='flex flex-col my-3 mx-8'>
+        <div className='flex flex-col my-3 mx-8 break-words'>
             <img src={img} alt="project_photo" className='rounded-full w-24 mx-auto' />
             <div className='p-2'>
-                <h5 className='text-gray-900 text-center border-b border-gray-300'>{title}</h5>
-                <p className='text-sm border-b border-gray-300'>
+                <h5 className='text-gray-900 text-center'>{title}</h5>
+                <p className='text-sm border-b border-t border-gray-300 '>
                     {descr} 
                 </p>
             </div>
