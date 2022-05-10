@@ -3,7 +3,7 @@ import photo from '../media/Gon.png'
 
 const Projects = () => {
     return (
-        <div className='flex items-center overflow-auto bg-blue-300 sm:justify-around'>
+        <div className='flex items-center overflow-auto overflow-y-hidden bg-blue-300 sm:justify-around h-full'>
             <Project img={photo} title={"pj1"} descr={"Este proyecto supone hacer equis cosa pero también se enfoca en hacer y cosa"} link={"#"} />
             <Project img={photo} title={"pj2"} descr={"Este proyecto supone hacer equis cosa pero también se enfoca en hacer y cosa"} link={"#"} />
             <Project img={photo} title={"pj3"} descr={"Este proyecto supone hacer equis cosa pero también se enfoca en hacer y cosa"} link={"#"} />
