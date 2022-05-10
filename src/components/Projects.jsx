@@ -15,7 +15,7 @@ const Projects = () => {
 
 const Project = ({img, title, descr, link}) => {
     return (
-        <div className='flex flex-col my-3 mx-8 break-words'>
+        <div className='flex flex-col my-3 mx-8 break-all'>
             <img src={img} alt="project_photo" className='rounded-full w-24 mx-auto' />
             <div className='p-2'>
                 <h5 className='text-gray-900 text-center'>{title}</h5>
