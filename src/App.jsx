@@ -4,6 +4,7 @@ import PublicLayout from './layouts/PublicLayout';
 import Index from './pages/Index';
 import NotFound from './pages/NotFound';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import About from './components/About';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Routes>
           <Route element={<PublicLayout />}>
             <Route path={'/'} element={<Index />} />
+            <Route path={'/'} element={<About />}/>
           </Route>
             <Route path={'*'} element={<NotFound />} />
         </Routes>
